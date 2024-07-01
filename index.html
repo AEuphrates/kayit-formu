@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Survey Form For CSS Practice</h1>
+    <p id="description">Please fill out the form below:</p>
+
+    <form id="survey-form">
+        <label id="name-label" for="name">Full Name</label>
+        <input id="name" type="text" placeholder="Enter your name">
+
+        <label id="email-label" for="email">Mail</label>
+        <input id="email" type="email" placeholder="Enter your email">
+
+        <label id="number-label" for="number">Age</label>
+        <input id="number" type="number" placeholder="Enter your age" min="1" max="100">
+
+        <label for="dropdown">Select Gender</label>
+        <select id="dropdown">
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <p>Where did you hear about us?</p>
+        <input type="radio" id="instagram" name="source" value="instagram">
+        <label for="instagram">Instagram</label>
+        <input type="radio" id="linkedin" name="source" value="linkedin">
+        <label for="linkedin">LinkedIn</label>
+
+        <p>Preferences:</p>
+        <input type="checkbox" id="terms" value="agree">
+        <label for="terms">Terms Of Service</label>
+        <input type="checkbox" id="subscribe" value="subscribe">
+        <label for="subscribe">Subscribe For News</label>
+
+        <label for="comments">Suggestions</label>
+        <textarea id="comments" placeholder="Enter your suggestions here"></textarea>
+
+        <input id="submit" type="submit" value="Sign Up">
+    </form>
+</body>
+</html>
